@@ -130,3 +130,6 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 10
   projectileOffset: 1
+  deathVFX: {fileID: 5095348566894086411, guid: 0b610492c0ba36b408687fed0edefcbd,
+    type: 3}
+  durationOfExplosion: 1
