@@ -10,6 +10,13 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = .6f;
     [SerializeField] int health = 200;
+    [SerializeField] AudioClip deathSound;
+    [SerializeField] AudioClip shootSound;
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float durationOfExplosion = 1f;
+    [SerializeField] [Range(0, 1)] float deathSoundVolume = 0.75f;
+    [SerializeField] [Range(0, 1)] float shootSoundVolume = 0.75f;
+    [SerializeField] float secondsBeforeGameOverScene = 2f;
 
     [Header("Projectile")]
     [SerializeField] GameObject laserPrefab;
@@ -22,11 +29,14 @@ public class Player : MonoBehaviour
     float xMax;
     float yMin;
     float yMax;
+
+    Level level;
         
     // Start is called before the first frame update
     void Start()
     {
         SetUpMoveBoundaries();
+        //level = FindObjectOfType<Level>();
     }
 
     // Update is called once per frame
@@ -70,6 +80,7 @@ public class Player : MonoBehaviour
         {
             GameObject laser = Instantiate(laserPrefab, new Vector3 (transform.position.x, transform.position.y + projectileOffset, transform.position.z), Quaternion.identity) as GameObject;
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
+            AudioSource.PlayClipAtPoint(shootSound, Camera.main.transform.position, shootSoundVolume);
             yield return new WaitForSeconds(projectileFiringPeriod);
         }
     }
@@ -86,9 +97,34 @@ public class Player : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
+
+    private void Die()
+    {
+        /*gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        gameObject.GetComponent<Player>().enabled = false;
+        */
+        GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity) as GameObject;
+        Destroy(explosion, durationOfExplosion);
+        AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
+        //StartCoroutine(PauseForDeath());
+        //this.spriteRenderer.enabled = false;
+        //this.collider2D.enabled = false;
+        //level.LoadGameOver();
+        FindObjectOfType<Level>().LoadGameOver();
+        Destroy(gameObject);
+    }
+    /*Wrote this one myself. Not needed.
+    private IEnumerator PauseForDeath()
+    {
+            Debug.Log("Time before yield: " + Time.time);
+            yield return new WaitForSeconds(secondsBeforeGameOverScene);
+            Debug.Log("Time after yield:  " + Time.time);
+            level.LoadGameOver();
+    }*/
 }
 
 
