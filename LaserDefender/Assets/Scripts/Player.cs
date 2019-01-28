@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     [SerializeField] float durationOfExplosion = 1f;
     [SerializeField] [Range(0, 1)] float deathSoundVolume = 0.75f;
     [SerializeField] [Range(0, 1)] float shootSoundVolume = 0.75f;
-    [SerializeField] float secondsBeforeGameOverScene = 2f;
+    //[SerializeField] float secondsBeforeGameOverScene = 2f;
 
     [Header("Projectile")]
     [SerializeField] GameObject laserPrefab;
@@ -99,6 +99,10 @@ public class Player : MonoBehaviour
         {
             Die();
         }
+    }
+    public int GetHealth()
+    {
+        return health;
     }
 
     private void Die()

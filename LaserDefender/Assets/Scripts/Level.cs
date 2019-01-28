@@ -8,16 +8,17 @@ public class Level : MonoBehaviour
     [SerializeField] float delayInSeconds = 2f;
     public void LoadGameScene()
     {
+        FindObjectOfType<GameSession>().ResetScore();
         SceneManager.LoadScene("Game");
     }
     public void LoadStartMenu()
     {
+        FindObjectOfType<GameSession>().ResetScore();
         SceneManager.LoadScene("StartMenu");
     }
     public void LoadGameOver()
     {
         StartCoroutine(WaitAndLoad());
-        
     }
     public void QuitGame()
     {
