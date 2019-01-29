@@ -1073,6 +1073,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSession
       objectReference: {fileID: 0}
+    - target: {fileID: 1103617438544323305, guid: 99e802f8328136648a33c5485614978c,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103617438544323305, guid: 99e802f8328136648a33c5485614978c,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9137437986436320460, guid: 99e802f8328136648a33c5485614978c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1207,16 +1217,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 606
-      objectReference: {fileID: 0}
-    - target: {fileID: 1103617438544323305, guid: 99e802f8328136648a33c5485614978c,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1103617438544323305, guid: 99e802f8328136648a33c5485614978c,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99e802f8328136648a33c5485614978c, type: 3}
@@ -1497,6 +1497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702073195406141868, guid: 3fc7b6589cdaa8c4f972c91080fe9ff8,
+        type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc7b6589cdaa8c4f972c91080fe9ff8, type: 3}

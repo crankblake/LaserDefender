@@ -28,5 +28,6 @@ public class Level : MonoBehaviour
     {
         yield return new WaitForSeconds(delayInSeconds);
         SceneManager.LoadScene("GameOver");
+        
     }
 }

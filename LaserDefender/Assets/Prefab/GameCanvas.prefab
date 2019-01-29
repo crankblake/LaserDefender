@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21, y: 573}
-  m_SizeDelta: {x: 476.8, y: 100.5}
+  m_AnchoredPosition: {x: -155, y: 882}
+  m_SizeDelta: {x: 700.4, y: 109.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9063349352397238733
 CanvasRenderer:
@@ -67,19 +67,21 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 99a95b7c72bba1e499684fef798e12a8, type: 3}
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
-    m_MaxSize: 50
+    m_MaxSize: 75
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0000
+  m_Text: '
+
+'
 --- !u!114 &6104752427578824126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,11 +167,11 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1080, y: 1920}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -227,8 +229,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 456, y: 573}
-  m_SizeDelta: {x: 476.8, y: 100.5}
+  m_AnchoredPosition: {x: 130, y: 882}
+  m_SizeDelta: {x: 751.9, y: 109.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8702073195406141867
 CanvasRenderer:
@@ -259,19 +261,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 99a95b7c72bba1e499684fef798e12a8, type: 3}
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
-    m_MaxSize: 50
-    m_Alignment: 0
+    m_MaxSize: 75
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0000
+  m_Text: 000000
 --- !u!114 &8702073195406141869
 MonoBehaviour:
   m_ObjectHideFlags: 0

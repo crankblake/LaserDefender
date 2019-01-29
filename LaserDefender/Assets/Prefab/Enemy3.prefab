@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 3212339829387385581}
   - component: {fileID: 3212339829387385580}
   - component: {fileID: 4352728549916982444}
-  - component: {fileID: 3169977675906308585}
-  - component: {fileID: 1012711287512706697}
-  - component: {fileID: 1493492513368127904}
-  - component: {fileID: 4628204258608649534}
+  - component: {fileID: 7722971190894244515}
+  - component: {fileID: 4953220258333500610}
+  - component: {fileID: 3822196731082879214}
+  - component: {fileID: 7391913298439942168}
   m_Layer: 9
-  m_Name: Enemy1
+  m_Name: Enemy3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b53869083ec494f4aafc9463044571a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93a4a6dc761c77a4bb66c307d0db09e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,23 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef57639cb5f13745af8b300e5b2207d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &3169977675906308585
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3212339829387385587}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.07959503}
-  serializedVersion: 2
-  m_Radius: 0.385405
---- !u!114 &1012711287512706697
+--- !u!114 &7722971190894244515
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,22 +108,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a668778def7754f9277f2efe3d67a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  scoreValue: 150
+  health: 600
+  scoreValue: 300
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
-  enemyLaserPrefab: {fileID: 7009988106808423563, guid: 4e03b04fc52d6794881f1b2c7a3eae7a,
+  enemyLaserPrefab: {fileID: 7009988106808423563, guid: f2fa15cef5dcc1e40b35f48407ecbab4,
     type: 3}
-  projectileSpeed: 10
-  projectileOffset: 1
+  projectileSpeed: 8
+  projectileOffset: 1.5
   deathVFX: {fileID: 5095348566894086411, guid: 0b610492c0ba36b408687fed0edefcbd,
     type: 3}
   durationOfExplosion: 1
   deathSound: {fileID: 8300000, guid: df5377318ba6c3747aae70eceab2245f, type: 3}
   enemyShootSound: {fileID: 8300000, guid: e12cba2fad8ae8b489c339af947c4efb, type: 3}
-  deathSoundVolume: 0.281
-  enemyShootSoundVolume: 0.292
---- !u!50 &1493492513368127904
+  deathSoundVolume: 0.309
+  enemyShootSoundVolume: 0.303
+--- !u!50 &4953220258333500610
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -159,8 +143,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &4628204258608649534
+  m_Constraints: 4
+--- !u!114 &3822196731082879214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,3 +157,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 200
+--- !u!60 &7391913298439942168
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3212339829387385587}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.64, y: 1.68}
+    newSize: {x: 0.93, y: 0.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.099999994, y: 0.84}
+      - {x: 0.099999994, y: 0.82}
+      - {x: 0, y: 0.84}
+      - {x: -0.48, y: 0.84}
+      - {x: -0.48566574, y: 0.83358383}
+      - {x: -0.8295979, y: 0.5704198}
+      - {x: -0.8008042, y: -0.39606762}
+      - {x: -0.7368186, y: -0.45045567}
+      - {x: -0.22484359, y: -0.8368006}
+      - {x: 0.21687216, y: -0.8336015}
+      - {x: 0.82, y: -0.45999998}
+      - {x: 0.82, y: 0.62}
+      - {x: 0.56, y: 0.84}

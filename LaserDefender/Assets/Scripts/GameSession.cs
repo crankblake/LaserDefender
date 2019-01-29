@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
@@ -35,7 +36,10 @@ public class GameSession : MonoBehaviour
 
     private void Start()
     {
-        scoreText.text = currentScore.ToString();
+        // scoreText.text = currentScore.ToString();
+        //string SceneName = FindObjectOfType < Level >
+
+      // if ()
     }
     // Update is called once per frame
     void Update()

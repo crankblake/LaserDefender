@@ -288,18 +288,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a66aef0fef2ce44bb75584174ad693d, type: 3}
---- !u!114 &1307479547 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1103617438544323305, guid: 99e802f8328136648a33c5485614978c,
-    type: 3}
-  m_PrefabInstance: {fileID: 4145531330960425883}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1519892464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -519,11 +507,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSession
       objectReference: {fileID: 0}
+    - target: {fileID: 1103617438544323305, guid: 99e802f8328136648a33c5485614978c,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103617438544323305, guid: 99e802f8328136648a33c5485614978c,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4145531332197007872, guid: 99e802f8328136648a33c5485614978c,
         type: 3}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 1307479547}
+      objectReference: {fileID: 0}
     - target: {fileID: 9137437986436320460, guid: 99e802f8328136648a33c5485614978c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -718,16 +716,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PixelPerfect
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1103617438544323305, guid: 99e802f8328136648a33c5485614978c,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1103617438544323305, guid: 99e802f8328136648a33c5485614978c,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99e802f8328136648a33c5485614978c, type: 3}
@@ -954,6 +942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668371042149308774, guid: a297e339377eb9241854cb8558b27c9d,
+        type: 3}
+      propertyPath: projectileOffset
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a297e339377eb9241854cb8558b27c9d, type: 3}
