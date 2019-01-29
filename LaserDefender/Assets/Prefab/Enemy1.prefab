@@ -137,8 +137,8 @@ MonoBehaviour:
   durationOfExplosion: 1
   deathSound: {fileID: 8300000, guid: df5377318ba6c3747aae70eceab2245f, type: 3}
   enemyShootSound: {fileID: 8300000, guid: e12cba2fad8ae8b489c339af947c4efb, type: 3}
-  deathSoundVolume: 0.281
-  enemyShootSoundVolume: 0.292
+  deathSoundVolume: 0.111
+  enemyShootSoundVolume: 0.116
 --- !u!50 &1493492513368127904
 Rigidbody2D:
   serializedVersion: 4

@@ -948,6 +948,16 @@ PrefabInstance:
       propertyPath: projectileOffset
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5668371042149308774, guid: a297e339377eb9241854cb8558b27c9d,
+        type: 3}
+      propertyPath: deathSoundVolume
+      value: 0.418
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668371042149308774, guid: a297e339377eb9241854cb8558b27c9d,
+        type: 3}
+      propertyPath: shootSoundVolume
+      value: 0.071
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a297e339377eb9241854cb8558b27c9d, type: 3}
 --- !u!1001 &5704521906610858889

@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
-  shotCounter: 0
+  scoreValue: 150
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
   enemyLaserPrefab: {fileID: 7009988106808423563, guid: 4e03b04fc52d6794881f1b2c7a3eae7a,
@@ -147,8 +147,8 @@ MonoBehaviour:
   durationOfExplosion: 1
   deathSound: {fileID: 8300000, guid: df5377318ba6c3747aae70eceab2245f, type: 3}
   enemyShootSound: {fileID: 8300000, guid: e12cba2fad8ae8b489c339af947c4efb, type: 3}
-  deathSoundVolume: 0.309
-  enemyShootSoundVolume: 0.303
+  deathSoundVolume: 0.106
+  enemyShootSoundVolume: 0.122
 --- !u!50 &4953220258333500610
 Rigidbody2D:
   serializedVersion: 4
